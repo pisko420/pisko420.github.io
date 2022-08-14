@@ -1,0 +1,333 @@
+@keyframes animeOn {
+    from {
+        top: 0%;
+    }
+
+    to {
+        top: 12%;
+    }
+}
+
+@keyframes animeOff {
+    from {
+        top: 12%;
+    }
+
+    to {
+        top: 0%;
+    }
+}
+
+body {
+    margin-left: -0.04%;
+    margin-top: -0.1%;
+    height: 98vh;
+    width: 100%;
+    background-color: #91a1ad;
+}
+
+.whiteImg {
+    opacity: 50%;
+}
+
+
+.grid-container {
+    margin-left: 0.05%;
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /*border: 2px solid rgba(0, 0, 0, 0.8);*/
+    /*margin-top:1.25%;*/
+    margin-top: 0.1%;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.red {}
+
+.dvaReda {
+    grid-template-columns: auto auto;
+}
+
+.triReda {
+    grid-template-columns: auto auto auto;
+}
+
+
+
+
+.dropbtn {
+    background-color: #3498DB;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.slika1 {
+    width: 2vw;
+    height: 2vw;
+}
+
+.slika2 {
+    margin-left: 80%;
+    width: 2vw;
+    height: 2vw;
+}
+
+
+.dropdown-content {
+    margin-top: -5%;
+    position: absolute;
+    margin-left: 37.5%;
+    width: 20%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content a {
+
+
+    text-decoration: none;
+    display: grid;
+}
+
+.dropdown a:hover {}
+
+.show {}
+
+.drops {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+
+
+
+.imgSivo {
+    margin-top: -0.1%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.text {
+    text-align: center;
+    margin-top: -0.1%;
+    width: 100%;
+    margin-left: -100%;
+    height: 100%;
+    position: relative;
+    background-color: #8d8d8d;
+    display: none;
+}
+
+p{
+    position: absolute;
+    font-size: 1.25vw;
+    display: none;
+    top: 42.5%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+.plusDrop {
+    width: 15%;
+}
+
+.binDrop {
+    width: 15%;
+}
+
+.animationIn {
+    animation-name: animeOn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animationOut {
+    animation-name: animeOff;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
+
+.plusDrop:hover {
+    width: 17%;
+}
+
+.binDrop:hover {
+    width: 17%;
+}
+
+
+.sve {
+    display: none;
+}
+
+.alertScreen {
+    display: none;
+    padding-top: 5%;
+    background-color: none;
+    width: 100%;
+    height: 93%;
+    position: relative;
+    margin-top: 0%;
+    text-align: center;
+}
+
+.divSlike {
+    width: 100%;
+    display: flex;
+}
+
+.useAlert {
+    display: block;
+}
+
+.alertBox {
+    text-align: center;
+    grid-template-rows: auto auto;
+    margin-top: 16%;
+    margin-left: 30%;
+    background-color: rgb(201, 201, 201);
+    width: 40%;
+    height: 30%;
+    border-radius: 25px;
+    display: grid;
+    border: 2px solid #000000;
+    opacity: 85%;
+}
+
+.switch {
+    margin-top: 3.5%;
+    position: relative;
+    display: inline-block;
+    width: 4vw;
+    height: 1.9vw;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5vw;
+    width: 1.5vw;
+    left: 0.2vw;
+    bottom: 0.2vw;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(2.125vw);
+    -ms-transform: translateX(2.125vw);
+    transform: translateX(2.125vw);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 2vw;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+.kamere {
+    margin-top: 9.5%;
+    margin-left: 32.5%;
+    height: 40%;
+    width: 35%;
+    border-radius: 15px;
+    border: 2px solid #000000;
+    font-size: 1vw;
+
+}
+
+.kamere:hover {
+    opacity: 80%;
+    background-color: rgb(255, 255, 255);
+}
+
+.set {
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin-left: 0%;
+    height: 30%;
+    width: 15%;
+}
+
+.cancel {
+    border-radius: 10px;
+    border: 2px solid #000000;
+    margin-left: 5%;
+    height: 30%;
+    width: 15%;
+}
+
+.set:hover {
+    margin-left: -1%;
+    height: 32%;
+    width: 17%;
+    opacity: 100%;
+    background-color: rgb(201, 201, 201);
+}
+
+.cancel:hover {
+    margin-left: 4%;
+    height: 32%;
+    width: 17%;
+    opacity: 100%;
+    background-color: rgb(201, 201, 201);
+}
